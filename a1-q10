@@ -1,0 +1,18 @@
+
+public class Main{
+        public static void main(String[] args) {
+          // write your code here  
+          Scanner scn;
+          scn=new Scanner(System.in);
+          System.out.println("enter the no");
+          int n=scn.nextInt();
+          System.out.println("prime factors are:");
+          for(int div=2;div<=n; div++)
+            {while(n%div==0)
+              {n=n/div;
+               System.out.println(div);
+              }
+            }
+          
+         }
+        }
